@@ -5,4 +5,5 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [clojure-hadoop "1.4.1"]]
+  :plugins [[lein2-eclipse "2.0.0"]]
   :aot [cia-hadoop.wordcount5])

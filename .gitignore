@@ -12,3 +12,7 @@ pom.xml.asc
 .lein-repl-history
 
 /out*
+
+/.settings
+/.classpath
+/.project
