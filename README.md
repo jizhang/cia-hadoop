@@ -2,19 +2,27 @@
 
 ## Usage
 
-### src/cia-hadoop/wordcount5.clj
+### Import into Eclipse
 
-* Compile
+    $ lein eclipse
+
+### Wordcount Example
+
+* Run locally with `lein`:
+
+    $ lein test
+
+* Compile:
 
     $ lein uberjar
 
-* Run locally:
+* Run locally with `java`:
 
-    $ java -cp target/cia-hadoop-0.1.0-SNAPSHOT-standalone.jar clojure_hadoop.job -job cia-hadoop.wordcount5/job -input README.md -output out5
+    $ java -cp target/cia-hadoop-0.1.0-SNAPSHOT-standalone.jar clojure_hadoop.job -job cia-hadoop.wordcount/job
 
 * Run on a cluster:
 
-    $ hadoop jar target/cia-hadoop-0.1.0-SNAPSHOT-standalone.jar clojure_hadoop.job -job cia-hadoop.wordcount5/job -input README.md -output out5
+    $ hadoop jar target/cia-hadoop-0.1.0-SNAPSHOT-standalone.jar clojure_hadoop.job -job cia-hadoop.wordcount/job
 
 ## License
 
